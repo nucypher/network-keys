@@ -96,12 +96,16 @@ def generate(threshold: int, shares: int, domain: str, nodes: List[str], duratio
 
 JSON_FILEPATH: str = 'network-keys.json'
 THRESHOLD: int = 2
-SHARES: int = 3
+SHARES: int = 4
 DURATION: int = 86_400 * 365  # seconds
 DOMAIN = 'ibex'
 NODES: List[str] = [
     # "https://ibex.nucypher.network:9151",
     # "https://143.198.239.218:9151"  # james testnet
+    "https://35.84.195.168:9151",
+    "https://44.234.20.234:9151",
+    "https://34.222.183.211:9151",
+    "https://143.198.135.10:9151"
 ]
 LABEL: str = f'{THRESHOLD}-of-{SHARES}-{DOMAIN}'
 
